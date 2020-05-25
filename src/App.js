@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import menu from "./assets/icon/open-menu.svg";
 
 function App() {
+  const [toggleSidebar, settoggleSidebar] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: "flex" }}>
+      <div className={`sidebar ${toggleSidebar ? "mobileSidebar" : ""}`}>
+        <p onClick={() => settoggleSidebar(!toggleSidebar)}>Mithhu</p>
+        <p onClick={() => settoggleSidebar(!toggleSidebar)}>Projects</p>
+        <p onClick={() => settoggleSidebar(!toggleSidebar)}>Skills</p>
+        <p onClick={() => settoggleSidebar(!toggleSidebar)}>Achievemnts</p>
+        <p onClick={() => settoggleSidebar(!toggleSidebar)}>Certifications</p>
+      </div>
+      <div>
+        <img
+          alt="menu"
+          onClick={() => settoggleSidebar(!toggleSidebar)}
+          className={`filter-green ${
+            toggleSidebar ? "burger" : "burgerMobile"
+          }`}
+          src={menu}
+          style={{ width: "2rem", height: "2rem", cursor: "pointer" }}
+        />
+        Components
+      </div>
     </div>
   );
 }
