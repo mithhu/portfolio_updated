@@ -1,14 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
 .sidebar {
   width: 15rem;
   height: 100vh;
-  background: pink;
+  border-right: 0.2rem solid black;
+  padding-top: 5rem;
 }
 
 .burgerMobile {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+.burger {
+  display: none;
+}
+
+.about {
+  width: calc(100vw - 15rem);
+}
+.linkHover {
+  transition: 0.3s;
+}
+.linkHover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #66bbdf;
+  border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 1025px) {
   .sidebar {
     display: none;
   }
