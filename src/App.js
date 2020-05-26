@@ -21,7 +21,7 @@ function App() {
             margin: 0,
             background: `${activeMenu === "about" ? "black" : ""}`,
           }}
-          className="linkHover"
+          className="menuHover"
           onClick={() => handleChange("about")}
         >
           About
@@ -34,7 +34,7 @@ function App() {
             margin: 0,
             background: `${activeMenu === "projects" ? "black" : ""}`,
           }}
-          className="linkHover"
+          className="menuHover"
           onClick={() => handleChange("projects")}
         >
           Projects
@@ -47,7 +47,7 @@ function App() {
             margin: 0,
             background: `${activeMenu === "skills" ? "black" : ""}`,
           }}
-          className="linkHover"
+          className="menuHover"
           onClick={() => handleChange("skills")}
         >
           Skills
@@ -60,7 +60,7 @@ function App() {
             margin: 0,
             background: `${activeMenu === "achievements" ? "black" : ""}`,
           }}
-          className="linkHover"
+          className="menuHover"
           onClick={() => handleChange("achievements")}
         >
           Achievemnts
@@ -73,7 +73,7 @@ function App() {
             margin: 0,
             background: `${activeMenu === "certifications" ? "black" : ""}`,
           }}
-          className="linkHover"
+          className="menuHover"
           onClick={() => handleChange("certifications")}
         >
           Certifications

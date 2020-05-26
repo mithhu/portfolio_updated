@@ -57,8 +57,20 @@ html {
 }
 .linkHover:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  color: #e31b6d;
+  background: #e31b6d;
+}
+
+.menuHover {
+  transition: 0.3s;
+}
+
+.menuHover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: black;
   border-radius: 0.3rem;
+  color: #e31b6d;
 }
 
 @media only screen and (max-width: 1025px) {
