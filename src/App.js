@@ -19,7 +19,7 @@ function App() {
             cursor: "pointer",
             padding: ".5rem 1.5rem",
             margin: 0,
-            background: `${activeMenu === "about" ? "#475AEA" : ""}`,
+            background: `${activeMenu === "about" ? "black" : ""}`,
           }}
           className="linkHover"
           onClick={() => handleChange("about")}
@@ -32,7 +32,7 @@ function App() {
 
             padding: ".5rem 1.5rem",
             margin: 0,
-            background: `${activeMenu === "projects" ? "#475AEA" : ""}`,
+            background: `${activeMenu === "projects" ? "black" : ""}`,
           }}
           className="linkHover"
           onClick={() => handleChange("projects")}
@@ -45,7 +45,7 @@ function App() {
 
             padding: ".5rem 1.5rem",
             margin: 0,
-            background: `${activeMenu === "skills" ? "#475AEA" : ""}`,
+            background: `${activeMenu === "skills" ? "black" : ""}`,
           }}
           className="linkHover"
           onClick={() => handleChange("skills")}
@@ -58,7 +58,7 @@ function App() {
 
             padding: ".5rem 1.5rem",
             margin: 0,
-            background: `${activeMenu === "achievements" ? "#475AEA" : ""}`,
+            background: `${activeMenu === "achievements" ? "black" : ""}`,
           }}
           className="linkHover"
           onClick={() => handleChange("achievements")}
@@ -71,7 +71,7 @@ function App() {
 
             padding: ".5rem 1.5rem",
             margin: 0,
-            background: `${activeMenu === "certifications" ? "#475AEA" : ""}`,
+            background: `${activeMenu === "certifications" ? "black" : ""}`,
           }}
           className="linkHover"
           onClick={() => handleChange("certifications")}
@@ -83,18 +83,24 @@ function App() {
         <img
           alt="menu"
           onClick={() => settoggleSidebar(!toggleSidebar)}
-          className={`filter-green ${
-            toggleSidebar ? "burger" : "burgerMobile"
-          }`}
+          className={`${toggleSidebar ? "burger" : "burgerMobile"}`}
           src={menu}
           style={{
             width: "2rem",
             height: "2rem",
             cursor: "pointer",
             position: "fixed",
+            marginLeft: "2rem",
+            marginTop: "1.5rem",
           }}
         />
-        {activeMenu === "about" && <About />}
+        <div
+          onClick={() => settoggleSidebar(false)}
+          style={{ height: "100vh" }}
+          // className={`${toggleSidebar ? "blurBackground" : ""}`}
+        >
+          {activeMenu === "about" && <About />}
+        </div>
       </div>
     </div>
   );

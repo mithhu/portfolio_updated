@@ -28,8 +28,11 @@ html {
 .sidebar {
   width: 15rem;
   height: 100vh;
-  border-right: 0.2rem solid black;
+  /* border-right: 0.2rem solid black; */
   padding-top: 5rem;
+  position: fixed;
+  background: #e31b6d;
+  color: white;
 }
 
 .burgerMobile {
@@ -42,19 +45,35 @@ html {
 
 .about {
   width: calc(100vw - 15rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 15rem;
+  align-items: center;
+  height: 100vh;
 }
 .linkHover {
   transition: 0.3s;
 }
 .linkHover:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #66bbdf;
+  background-color: black;
   border-radius: 0.3rem;
 }
 
 @media only screen and (max-width: 1025px) {
   .sidebar {
     display: none;
+  }
+  .blurBackground {
+    display: none;
+  }
+  .zoomImage {
+    display: none;
+  }
+  .about {
+    margin-left: 0;
+    width: 100vw;
   }
   .burger {
     display: none;
@@ -67,9 +86,4 @@ html {
   .mobileSidebar {
     display: inline;
   }
-}
-
-.filter-green {
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
 }

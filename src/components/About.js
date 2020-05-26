@@ -9,17 +9,15 @@ import MahamudulResume from "../assets/Mahamudul_Resume.pdf";
 
 function About() {
   return (
-    <div
-      className="about"
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-      }}
-    >
+    <div className="about">
       <div>
         <h2
-          style={{ marginBottom: 0, fontSize: "5rem", letterSpacing: "0.5rem" }}
+          style={{
+            marginBottom: 0,
+            marginTop: 0,
+            fontSize: "5rem",
+            letterSpacing: "0.5rem",
+          }}
         >
           Hello
         </h2>
@@ -61,7 +59,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div style={{ marginTop: "3rem" }}>
+      <div className="zoomImage" style={{ marginTop: "3rem" }}>
         <Zoom zoomMargin={40}>
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
