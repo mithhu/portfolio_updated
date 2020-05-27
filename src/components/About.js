@@ -7,6 +7,7 @@ import cv from "../assets/icon/cv.svg";
 import linkedin from "../assets/icon/linkedin.svg";
 
 import MahamudulResume from "../assets/Mahamudul_Resume.pdf";
+import { Animated } from "react-animated-css";
 
 function About() {
   return (
@@ -25,15 +26,17 @@ function About() {
         <h2 style={{ margin: 0, fontSize: "5rem", letterSpacing: "0.5rem" }}>
           I am
         </h2>
-        <h1
-          style={{
-            marginBottom: ".2rem",
-            fontSize: "5rem",
-            letterSpacing: "0.5rem",
-          }}
-        >
-          Mithhu
-        </h1>
+        <Animated animationIn="fadeInRight" isVisible={true}>
+          <h1
+            style={{
+              marginBottom: ".2rem",
+              fontSize: "5rem",
+              letterSpacing: "0.5rem",
+            }}
+          >
+            Mithhu
+          </h1>
+        </Animated>
         <div style={{ display: "flex" }}>
           <div className="linkHover" style={{ padding: ".5rem" }}>
             <a
@@ -59,24 +62,25 @@ function About() {
             </a>
           </div>
         </div>
-
-        <div>
-          <h2
-            style={{
-              textDecoration: "underline",
-              marginBottom: 0,
-              marginTop: "3rem",
-            }}
-          >
-            Skills
-          </h2>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
-            <p style={{ fontWeight: "bold" }}>
-              JavaScript(ES6) | Python | ReactJs | Redux | TypeScript | React
-              Router | CSS3 | Sass | HTML5 | Firebase | git
-            </p>
+        <Animated animationIn="fadeInDownBig" isVisible={true}>
+          <div>
+            <h2
+              style={{
+                textDecoration: "underline",
+                marginBottom: 0,
+                marginTop: "3rem",
+              }}
+            >
+              Skills
+            </h2>
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+              <p style={{ fontWeight: "bold" }}>
+                JavaScript(ES6) | Python | ReactJs | Redux | TypeScript | React
+                Router | CSS3 | Sass | HTML5 | Firebase | git
+              </p>
+            </div>
           </div>
-        </div>
+        </Animated>
       </div>
       <div className="zoomImage" style={{ marginTop: "3rem", flex: 1 }}>
         <Zoom zoomMargin={40}>

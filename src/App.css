@@ -25,9 +25,14 @@ html {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sidebar {
   width: 15rem;
   height: 100vh;
+  z-index: 1;
   /* border-right: 0.2rem solid black; */
   padding-top: 5rem;
   position: fixed;
@@ -52,6 +57,23 @@ html {
   align-items: center;
   height: 100vh;
 }
+
+.projectContainer {
+  margin-left: 16rem;
+  width: calc(100vw - 16rem);
+  padding-top: 2rem;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  padding: 4rem;
+  padding-top: 2rem;
+  /* padding-right: 4rem; */
+}
+
 .linkHover {
   transition: 0.3s;
 }
@@ -73,12 +95,37 @@ html {
   color: #e31b6d;
 }
 
+.image {
+  width: 18rem;
+  height: 12rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.captionTransform {
+  opacity: 0;
+  text-align: center;
+  margin-top: 0.5rem;
+  transition: 0.2s;
+}
+
+.figure {
+  padding: 1rem;
+}
+
+.figure:hover .image {
+  filter: brightness(50%);
+}
+
+.figure:hover .captionTransform {
+  opacity: 1;
+  transform: translateY(-4rem);
+}
 @media only screen and (max-width: 1025px) {
   .sidebar {
-    display: none;
+    opacity: 0;
   }
   .blurBackground {
-    display: none;
+    /* display: none; */
+    filter: blur(4px);
   }
   .zoomImage {
     display: none;
@@ -88,6 +135,16 @@ html {
     padding-left: 1.5rem;
     width: 100vw;
   }
+
+  .projectContainer {
+    margin-left: 0;
+    width: 100vw;
+    padding-top: 1rem;
+  }
+  .projects {
+    padding-top: 0;
+  }
+
   .burger {
     display: none;
   }
@@ -95,9 +152,23 @@ html {
   .burgerMobile {
     display: inline;
   }
-
+  .mobileSidebarHide {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
   .mobileSidebar {
-    display: inline;
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+
+  .captionTransform {
+    opacity: 1;
+  }
+
+  .figure:hover .captionTransform {
+    /* opacity: 1; */
+    transform: translateY(0);
   }
 }
 

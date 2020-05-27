@@ -14,7 +14,11 @@ function App() {
   };
   return (
     <div style={{ display: "flex" }}>
-      <div className={`sidebar ${toggleSidebar ? "mobileSidebar" : ""}`}>
+      <div
+        className={`sidebar ${
+          toggleSidebar ? "mobileSidebar" : "mobileSidebarHide"
+        }`}
+      >
         <p
           style={{
             cursor: "pointer",
@@ -42,20 +46,6 @@ function App() {
         >
           Projects
         </p>
-        {/* <p
-          style={{
-            cursor: "pointer",
-
-            padding: ".5rem 1.5rem",
-            margin: 0,
-            background: `${activeMenu === "skills" ? "black" : ""}`,
-            color: `${activeMenu === "skills" ? "#e31b6d" : ""}`,
-          }}
-          className="menuHover"
-          onClick={() => handleChange("skills")}
-        >
-          Skills
-        </p> */}
         <p
           style={{
             cursor: "pointer",
@@ -98,12 +88,13 @@ function App() {
             position: "fixed",
             marginLeft: "2rem",
             marginTop: "1.5rem",
+            zIndex: 1,
           }}
         />
         <div
           onClick={() => settoggleSidebar(false)}
           style={{ height: "100vh" }}
-          // className={`${toggleSidebar ? "blurBackground" : ""}`}
+          className={`${toggleSidebar ? "blurBackground" : ""}`}
         >
           {activeMenu === "about" && <About />}
           {activeMenu === "projects" && <Projects />}
