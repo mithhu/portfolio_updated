@@ -44,11 +44,11 @@ html {
 }
 
 .about {
-  width: calc(100vw - 15rem);
+  width: calc(100vw - 17rem);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 15rem;
+  margin-left: 17rem;
   align-items: center;
   height: 100vh;
 }
@@ -85,6 +85,7 @@ html {
   }
   .about {
     margin-left: 0;
+    padding-left: 1.5rem;
     width: 100vw;
   }
   .burger {
@@ -97,5 +98,11 @@ html {
 
   .mobileSidebar {
     display: inline;
+  }
+}
+
+@media only screen and (max-height: 641px) {
+  .about {
+    padding-top: 2rem;
   }
 }

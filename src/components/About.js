@@ -5,12 +5,13 @@ import resume from "../assets/images/resume.png";
 import github from "../assets/icon/github.svg";
 import cv from "../assets/icon/cv.svg";
 import linkedin from "../assets/icon/linkedin.svg";
+
 import MahamudulResume from "../assets/Mahamudul_Resume.pdf";
 
 function About() {
   return (
     <div className="about">
-      <div>
+      <div style={{ flex: 1, paddingRight: "2rem" }}>
         <h2
           style={{
             marginBottom: 0,
@@ -58,12 +59,30 @@ function About() {
             </a>
           </div>
         </div>
+
+        <div>
+          <h2
+            style={{
+              textDecoration: "underline",
+              marginBottom: 0,
+              marginTop: "3rem",
+            }}
+          >
+            Skills
+          </h2>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <p style={{ fontWeight: "bold" }}>
+              JavaScript(ES6) | Python | ReactJs | Redux | TypeScript | React
+              Router | CSS3 | Sass | HTML5 | Firebase | git
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="zoomImage" style={{ marginTop: "3rem" }}>
+      <div className="zoomImage" style={{ marginTop: "3rem", flex: 1 }}>
         <Zoom zoomMargin={40}>
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
-            alt="that wanaka tree"
+            alt="Resume"
             src={resume}
             width="500"
           />
