@@ -40,7 +40,7 @@ a {
   z-index: 1;
   padding-top: 5rem;
   position: fixed;
-  background: #e31b6d;
+  background: #0f1126;
   color: white;
 }
 
@@ -96,7 +96,7 @@ a {
 .linkHover:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
-  color: #e31b6d;
+  color: #0f1126;
   background: #e31b6d;
 }
 
@@ -137,7 +137,7 @@ a {
 }
 
 .vertical-timeline::before {
-  background: #e31b6d !important;
+  background: #0fa3a3 !important;
 }
 
 .vertical-timeline-element-date {

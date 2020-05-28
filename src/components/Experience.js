@@ -26,10 +26,10 @@ function Experience() {
         {experiences.map((experience) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#e31b6d", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #e31b6d" }}
+            contentStyle={{ background: "#0fa3a3", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #0fa3a3" }}
             date={experience.date}
-            iconStyle={{ background: "#e31b6d", color: "#fff" }}
+            iconStyle={{ background: "#0fa3a3", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
               {experience.position}
@@ -47,7 +47,7 @@ function Experience() {
                 style={{
                   padding: "0.3rem 2rem",
                   color: "#e31b6d",
-                  background: "black",
+                  background: "#0f1126",
                 }}
                 className="companyLink"
                 target="_blank"

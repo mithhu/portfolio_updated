@@ -26,10 +26,10 @@ function Achievements() {
         {achievements.map((achievement) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#e31b6d", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #e31b6d" }}
+            contentStyle={{ background: "#0fa3a3", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #0fa3a3" }}
             date={achievement.date}
-            iconStyle={{ background: "#e31b6d", color: "#fff" }}
+            iconStyle={{ background: "#0fa3a3", color: "#fff" }}
           >
             <h3 className="vertical-timeline-element-title">
               {achievement.position}

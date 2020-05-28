@@ -25,8 +25,8 @@ function Projects() {
               href="https://mithhu.github.io/catfight"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               CatFight
@@ -42,8 +42,8 @@ function Projects() {
               href="https://restaurant-review-mithhu.netlify.app/"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               Find Restaurant
@@ -59,8 +59,8 @@ function Projects() {
               href="https://mithhu.github.io/brooklynfilmfestival/"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               Brooklyn Film Festival
@@ -76,8 +76,8 @@ function Projects() {
               href="https://react-phone-store-e-commerce.netlify.app/"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               Phone Store
@@ -93,8 +93,8 @@ function Projects() {
               href="https://mithhu.github.io/natours"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               Natours
@@ -110,8 +110,8 @@ function Projects() {
               href="https://codepen.io/mithhu/full/jGrgMV"
               style={{
                 padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
+                background: "#0f1126",
+                color: "#e31b6d",
               }}
             >
               Twitch TV Stream
