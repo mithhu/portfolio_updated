@@ -19,24 +19,37 @@ function About() {
             marginTop: 0,
             fontSize: "5rem",
             letterSpacing: "0.5rem",
+            fontWeight: "lighter",
           }}
         >
           Hello
         </h2>
-        <h2 style={{ margin: 0, fontSize: "5rem", letterSpacing: "0.5rem" }}>
+        <h2
+          style={{
+            margin: 0,
+            fontSize: "5rem",
+            letterSpacing: "0.5rem",
+            fontWeight: "lighter",
+          }}
+        >
           I am
         </h2>
         <Animated animationIn="fadeInRight" isVisible={true}>
           <h1
             style={{
               marginBottom: ".2rem",
+              marginTop: "1.5rem",
               fontSize: "5rem",
               letterSpacing: "0.5rem",
+              fontWeight: "lighter",
             }}
           >
             Mithhu
           </h1>
         </Animated>
+        <p style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}>
+          mithhu333@gmail.com | +8801742001078
+        </p>
         <div style={{ display: "flex" }}>
           <div className="linkHover" style={{ padding: ".5rem" }}>
             <a
@@ -74,7 +87,7 @@ function About() {
               Skills
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap" }}>
-              <p style={{ fontWeight: "bold" }}>
+              <p style={{ fontWeight: 600 }}>
                 JavaScript(ES6) | Python | ReactJs | Redux | TypeScript | React
                 Router | CSS3 | Sass | HTML5 | Firebase | git
               </p>

@@ -29,11 +29,15 @@ a {
   text-decoration: none;
 }
 
+.components {
+  height: 100vh;
+  margin-left: 15rem;
+}
+
 .sidebar {
   width: 15rem;
   height: 100vh;
   z-index: 1;
-  /* border-right: 0.2rem solid black; */
   padding-top: 5rem;
   position: fixed;
   background: #e31b6d;
@@ -53,25 +57,27 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 17rem;
+  margin-left: 2rem;
   align-items: center;
   height: 100vh;
 }
 
 .projectContainer {
-  margin-left: 16rem;
+  margin-left: 1rem;
   width: calc(100vw - 16rem);
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+.experienceContainer {
+  width: calc(100vw - 17rem);
+  padding-top: 1rem;
 }
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   padding: 4rem;
   padding-top: 2rem;
-  /* padding-right: 4rem; */
 }
 
 .linkHover {
@@ -119,16 +125,38 @@ a {
   opacity: 1;
   transform: translateY(-4rem);
 }
+
+.vertical-timeline::before {
+  background: #e31b6d !important;
+}
+
+.vertical-timeline-element-date {
+  color: black;
+}
+
+.companyLink:hover {
+  color: #fff !important;
+}
+
+.vertical-timeline-element-date {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1025px) {
+  .componentsHeading {
+    margin-top: 0.5rem;
+  }
   .sidebar {
     opacity: 0;
   }
   .blurBackground {
-    /* display: none; */
     filter: blur(4px);
   }
   .zoomImage {
     display: none;
+  }
+  .components {
+    margin-left: 0;
   }
   .about {
     margin-left: 0;
@@ -136,11 +164,12 @@ a {
     width: 100vw;
   }
 
-  .projectContainer {
+  .projectContainer,
+  .experienceContainer {
     margin-left: 0;
     width: 100vw;
-    padding-top: 1rem;
   }
+
   .projects {
     padding-top: 0;
   }
@@ -167,8 +196,11 @@ a {
   }
 
   .figure:hover .captionTransform {
-    /* opacity: 1; */
     transform: translateY(0);
+  }
+
+  .vertical-timeline-element-date {
+    color: #fff;
   }
 }
 

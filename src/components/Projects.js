@@ -9,7 +9,12 @@ import twitch from "../assets/images/twitch.jpg";
 function Projects() {
   return (
     <div className="projectContainer">
-      <h2 style={{ textAlign: "center", marginBottom: 0 }}>Projects</h2>
+      <h2
+        className="componentsHeading"
+        style={{ textAlign: "center", marginBottom: 0, fontSize: "xx-large" }}
+      >
+        Projects
+      </h2>
       <div className="projects">
         <div className="figure">
           <img alt="CatFight" className="image" src={catfight} />

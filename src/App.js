@@ -3,12 +3,12 @@ import "./App.css";
 import menu from "./assets/icon/open-menu.svg";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 
 function App() {
   const [toggleSidebar, settoggleSidebar] = useState(false);
   const [activeMenu, setActiveMenu] = useState("about");
   const handleChange = (menu) => {
-    // // console.log("menu", menu);
     setActiveMenu(menu);
     settoggleSidebar(!toggleSidebar);
   };
@@ -31,6 +31,20 @@ function App() {
           onClick={() => handleChange("about")}
         >
           About
+        </p>
+        <p
+          style={{
+            cursor: "pointer",
+
+            padding: ".5rem 1.5rem",
+            margin: 0,
+            background: `${activeMenu === "experience" ? "black" : ""}`,
+            color: `${activeMenu === "experience" ? "#e31b6d" : ""}`,
+          }}
+          className="menuHover"
+          onClick={() => handleChange("experience")}
+        >
+          Experience
         </p>
         <p
           style={{
@@ -93,11 +107,11 @@ function App() {
         />
         <div
           onClick={() => settoggleSidebar(false)}
-          style={{ height: "100vh" }}
-          className={`${toggleSidebar ? "blurBackground" : ""}`}
+          className={`components ${toggleSidebar ? "blurBackground" : ""}`}
         >
           {activeMenu === "about" && <About />}
           {activeMenu === "projects" && <Projects />}
+          {activeMenu === "experience" && <Experience />}
         </div>
       </div>
     </div>
