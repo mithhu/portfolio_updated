@@ -4,6 +4,7 @@ import menu from "./assets/icon/open-menu.svg";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Achievements from "./components/Achievements";
 
 function App() {
   const [toggleSidebar, settoggleSidebar] = useState(false);
@@ -74,20 +75,6 @@ function App() {
         >
           Achievements
         </p>
-        <p
-          style={{
-            cursor: "pointer",
-
-            padding: ".5rem 1.5rem",
-            margin: 0,
-            background: `${activeMenu === "certifications" ? "black" : ""}`,
-            color: `${activeMenu === "certifications" ? "#e31b6d" : ""}`,
-          }}
-          className="menuHover"
-          onClick={() => handleChange("certifications")}
-        >
-          Certifications
-        </p>
       </div>
       <div>
         <img
@@ -112,6 +99,7 @@ function App() {
           {activeMenu === "about" && <About />}
           {activeMenu === "projects" && <Projects />}
           {activeMenu === "experience" && <Experience />}
+          {activeMenu === "achievements" && <Achievements />}
         </div>
       </div>
     </div>

@@ -20,7 +20,9 @@ function Projects() {
           <img alt="CatFight" className="image" src={catfight} />
           <figcaption className="captionTransform">
             <a
-              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mithhu.github.io/catfight"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#e31b6d",
@@ -35,7 +37,9 @@ function Projects() {
           <img alt="Find Restaurant" className="image" src={restaurant} />
           <figcaption className="captionTransform">
             <a
-              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://restaurant-review-mithhu.netlify.app/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#e31b6d",
@@ -50,7 +54,9 @@ function Projects() {
           <img alt="Brooklyn Film Festival" className="image" src={brooklyn} />
           <figcaption className="captionTransform">
             <a
-              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mithhu.github.io/brooklynfilmfestival/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#e31b6d",
@@ -65,7 +71,9 @@ function Projects() {
           <img alt="Phone Store" className="image" src={store} />
           <figcaption className="captionTransform">
             <a
-              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://react-phone-store-e-commerce.netlify.app/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#e31b6d",
@@ -77,25 +85,12 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Twitch TV Stream" className="image" src={twitch} />
-          <figcaption className="captionTransform">
-            <a
-              href="/"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#e31b6d",
-                color: "white",
-              }}
-            >
-              Twitch TV Stream
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
           <img alt="Natours" className="image" src={natours} />
           <figcaption className="captionTransform">
             <a
-              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mithhu.github.io/natours"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#e31b6d",
@@ -103,6 +98,23 @@ function Projects() {
               }}
             >
               Natours
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="Twitch TV Stream" className="image" src={twitch} />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://codepen.io/mithhu/full/jGrgMV"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#e31b6d",
+                color: "white",
+              }}
+            >
+              Twitch TV Stream
             </a>
           </figcaption>
         </div>
