@@ -87,7 +87,7 @@ function App() {
             height: "2rem",
             cursor: "pointer",
             position: "fixed",
-            marginLeft: "2rem",
+            marginLeft: "0.5rem",
             marginTop: "1.5rem",
             zIndex: 1,
           }}

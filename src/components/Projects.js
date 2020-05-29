@@ -17,23 +17,6 @@ function Projects() {
       </h2>
       <div className="projects">
         <div className="figure">
-          <img alt="CatFight" className="image" src={catfight} />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://mithhu.github.io/catfight"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              CatFight
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
           <img alt="Find Restaurant" className="image" src={restaurant} />
           <figcaption className="captionTransform">
             <a
@@ -47,6 +30,23 @@ function Projects() {
               }}
             >
               Find Restaurant
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="CatFight" className="image" src={catfight} />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mithhu.github.io/catfight"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              CatFight
             </a>
           </figcaption>
         </div>

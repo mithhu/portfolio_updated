@@ -2,13 +2,13 @@
   "data": [
     {
       "date": "January 2019 - April 2020",
-      "position": "Frontend Developer path Scholarship",
+      "position": "Front-end Developer path Scholarship",
       "company": "OpenClassrooms, Facebook",
+      "key": 1,
       "description": [
-        "OpenClassrooms is the leading online-only higher education institution in Europe offering top quality, education-to-employment programs, and career coaching services for students worldwide.",
         "I was one of the 40 applicants who achieved a full scholarship on Front-end Development degree at OpenClassrooms by Facebook among thousands of applicants.",
+        "OpenClassrooms is the leading online-only higher education institution in Europe offering top quality, education-to-employment programs, and career coaching services for students worldwide.",
         "The degree is built around real-life professional-level projects which needed to be solved using modern technologies and following coding best practices.",
-        "Implemented an authentication system using JWT which includes access and refresh token to make the site more secure.",
         "A mentor with experience of 10+ years in Software engineering was assigned to me who offered me one-to-one weekly video conference sessions for 12 months. All derivable are reviewed by independent third party who is also an expert in the field."
       ]
     },
@@ -17,15 +17,15 @@
       "date": "October 2018 - January 2019",
       "position": "PyTorch Scholarship Challenge",
       "company": "Udacity, Facebook",
+      "key": 2,
       "description": [
         "Built a network that can classify images of dogs and cats with state-of-the-art performance.",
         "Learned how to use convolutional networks to build computer vision models.",
         "Used a deep neural network to transfer the artistic style of one image onto another image.",
         "Built a network that can generate realistic text one letter at a time.",
         "Built a recurrent neural network that can accurately predict the sentiment of movie reviews.",
-
-        "Deployed PyTorch models with Torch Script.",
-        "Built a classifier that could identify different species of flowers from a pre-trained data set."
+        "Built a classifier that could identify different species of flowers from a pre-trained data set.",
+        "Deployed PyTorch models with Torch Script."
       ]
     }
   ]

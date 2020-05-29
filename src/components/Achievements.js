@@ -25,6 +25,7 @@ function Achievements() {
       <VerticalTimeline>
         {achievements.map((achievement) => (
           <VerticalTimelineElement
+            key={achievement.key}
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#0fa3a3", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #0fa3a3" }}

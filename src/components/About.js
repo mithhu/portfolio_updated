@@ -12,7 +12,6 @@ function About() {
   return (
     <div className="about">
       <div style={{ flex: 1, paddingRight: "2rem" }}>
-        {/* <Animated animationIn="fadeInRight" isVisible={true}> */}
         <h1
           style={{
             marginBottom: ".2rem",
@@ -24,8 +23,6 @@ function About() {
         >
           Mithhu
         </h1>
-        {/* </Animated> */}
-        {/* <Animated animationIn="fadeInUpBig" isVisible={true}> */}
         <p style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}>
           mithhu333@gmail.com | +8801742001078
         </p>
@@ -54,8 +51,6 @@ function About() {
             </a>
           </div>
         </div>
-        {/* </Animated> */}
-        {/* <Animated animationIn="fadeInDownBig" isVisible={true}> */}
         <div>
           <h2
             style={{
@@ -73,8 +68,6 @@ function About() {
             </p>
           </div>
         </div>
-        {/* </Animated> */}
-        {/* <Animated animationIn="fadeInRight" isVisible={true}> */}
         <div>
           <h2
             style={{
@@ -85,7 +78,13 @@ function About() {
           >
             Education
           </h2>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              flexDirection: "column",
+            }}
+          >
             <div>
               <h3 style={{ marginBottom: 0 }}>
                 East West Universiy{" "}
@@ -111,9 +110,8 @@ function About() {
             </div>
           </div>
         </div>
-        {/* </Animated> */}
       </div>
-      <div className="zoomImage" style={{ marginTop: "3rem", flex: 1 }}>
+      <div className="zoomImage" style={{ flex: 1, alignItems: "center" }}>
         <Zoom zoomMargin={40}>
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}

@@ -4,6 +4,7 @@
       "date": "August 2019 - Februray 2020",
       "position": "Junior Software Engineer(Front-end)",
       "company": "Tigrow Ltd",
+      "key": 1,
       "description": [
         "Helped to design frontend architecture using React, Redux, React Router and TypeScript.",
         "Added a card-based drag and drop feature to an existing task management system to track task progress.",
@@ -17,8 +18,9 @@
 
     {
       "date": "March 2019 - July 2019",
-      "position": "Intern Front-end Devloper",
+      "position": "Intern Front-end Developer",
       "company": "Circle Fintech Ltd",
+      "key": 2,
       "description": [
         "Built the frontend part of a payment gateway system to make it possible to do payment from any local digital payment service",
         "Enabled the option to open a bank account from home by developing the frontend part of an online registration system."

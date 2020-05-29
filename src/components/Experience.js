@@ -30,6 +30,7 @@ function Experience() {
             contentArrowStyle={{ borderRight: "7px solid  #0fa3a3" }}
             date={experience.date}
             iconStyle={{ background: "#0fa3a3", color: "#fff" }}
+            key={experience.key}
           >
             <h3 className="vertical-timeline-element-title">
               {experience.position}
