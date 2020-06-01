@@ -3,12 +3,11 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 
-import * as achievementList from "../assets/achievementList.json";
+import * as experienceList from "../assets/experienceList.json";
 
-function Achievements() {
-  const achievements = achievementList.data;
+function Experience() {
+  const experiences = experienceList.data;
   return (
     <div className="experienceContainer">
       <h2
@@ -19,30 +18,45 @@ function Achievements() {
           fontSize: "xx-large",
         }}
       >
-        Achievements
+        Experience
       </h2>
 
       <VerticalTimeline>
-        {achievements.map((achievement) => (
+        {experiences.map((experience) => (
           <VerticalTimelineElement
-            key={achievement.key}
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#0fa3a3", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #0fa3a3" }}
-            date={achievement.date}
+            date={experience.date}
             iconStyle={{ background: "#0fa3a3", color: "#fff" }}
+            key={experience.key}
           >
             <h3 className="vertical-timeline-element-title">
-              {achievement.position}
+              {experience.position}
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              {achievement.company}
+              {experience.company}
             </h4>
             <ul>
-              {achievement.description.map((desc) => (
+              {experience.description.map((desc) => (
                 <li>{desc}</li>
               ))}
             </ul>
+            <div style={{ textAlign: "center" }}>
+              <a
+                style={{
+                  padding: "0.3rem 2rem",
+                  color: "#e31b6d",
+                  background: "#0f1126",
+                }}
+                className="companyLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={experience.link}
+              >
+                Visit Company
+              </a>
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
@@ -50,4 +64,4 @@ function Achievements() {
   );
 }
 
-export default Achievements;
+export default Experience;

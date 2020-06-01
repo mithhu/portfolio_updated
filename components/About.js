@@ -1,12 +1,8 @@
 import React from "react";
 import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
-import resume from "../assets/images/resume.png";
-import github from "../assets/icon/github.svg";
-import cv from "../assets/icon/cv.svg";
-import linkedin from "../assets/icon/linkedin.svg";
-
-import MahamudulResume from "../assets/Mahamudul_Resume.pdf";
+import Github from "../public/icons/github.svg";
+import Cv from "../public/icons/cv.svg";
+import Linkedin from "../public/icons/linkedin.svg";
 
 function About() {
   return (
@@ -33,7 +29,10 @@ function About() {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/mithhu"
             >
-              <img style={{ width: "2rem" }} src={linkedin} alt="LinkedIn" />
+              <Linkedin
+                style={{ width: "2rem", height: "2rem" }}
+                alt="LinkedIn"
+              />
             </a>
           </div>
           <div className="linkHover" style={{ padding: ".5rem" }}>
@@ -42,12 +41,12 @@ function About() {
               rel="noopener noreferrer"
               href="https://github.com/mithhu"
             >
-              <img style={{ width: "2rem" }} src={github} alt="Github" />
+              <Github style={{ width: "2rem", height: "2rem" }} alt="Github" />
             </a>
           </div>
           <div className="linkHover" style={{ padding: ".5rem" }}>
-            <a href={MahamudulResume} target="_blank" rel="noopener noreferrer">
-              <img style={{ width: "2rem" }} src={cv} alt="Resume" />
+            <a href="/Mahamudul_Resume.pdf" target="_blank">
+              <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
             </a>
           </div>
         </div>
@@ -116,7 +115,7 @@ function About() {
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
             alt="Resume"
-            src={resume}
+            src="/images/resume.png"
             width="500"
           />
         </Zoom>
