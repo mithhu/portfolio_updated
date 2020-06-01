@@ -1,10 +1,10 @@
 import React from "react";
-import catfight from "../assets/images/catFight.jpg";
-import restaurant from "../assets/images/restaurant.jpg";
-import brooklyn from "../assets/images/brooklyn.jpg";
-import store from "../assets/images/store.jpg";
-import natours from "../assets/images/natours.jpg";
-import twitch from "../assets/images/twitch.jpg";
+// import catfight from "../assets/images/catFight.jpg";
+// import restaurant from "../assets/images/restaurant.jpg";
+// import brooklyn from "../assets/images/brooklyn.jpg";
+// import store from "../assets/images/store.jpg";
+// import natours from "../assets/images/natours.jpg";
+// import twitch from "../assets/images/twitch.jpg";
 
 function Projects() {
   return (
@@ -17,7 +17,7 @@ function Projects() {
       </h2>
       <div className="projects">
         <div className="figure">
-          <img alt="Find Restaurant" className="image" src={restaurant} />
+          <img alt="Find Restaurant" className="image" src="/restaurant.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -34,7 +34,7 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="CatFight" className="image" src={catfight} />
+          <img alt="CatFight" className="image" src="/catFight.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -51,7 +51,7 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Brooklyn Film Festival" className="image" src={brooklyn} />
+          <img alt="Brooklyn Film Festival" className="image" src="/brooklyn.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -68,7 +68,7 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Phone Store" className="image" src={store} />
+          <img alt="Phone Store" className="image" src="/store.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -85,7 +85,7 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Natours" className="image" src={natours} />
+          <img alt="Natours" className="image" src="/natours.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -102,7 +102,7 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Twitch TV Stream" className="image" src={twitch} />
+          <img alt="Twitch TV Stream" className="image" src="/twitch.jpg" />
           <figcaption className="captionTransform">
             <a
               target="_blank"

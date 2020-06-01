@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import "./App.css";
-import menu from "./assets/icon/open-menu.svg";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Achievements from "./components/Achievements";
+import "../styles.css";
+import "react-medium-image-zoom/dist/styles.css";
+import "react-vertical-timeline-component/style.min.css";
+
+import Menu from "../public/open-menu.svg";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Experience from "../components/Experience";
+import Achievements from "../components/Achievements";
 
 function App() {
   const [toggleSidebar, settoggleSidebar] = useState(false);
@@ -77,11 +80,10 @@ function App() {
         </p>
       </div>
       <div>
-        <img
+        <Menu
           alt="menu"
           onClick={() => settoggleSidebar(!toggleSidebar)}
           className={`${toggleSidebar ? "burger" : "burgerMobile"}`}
-          src={menu}
           style={{
             width: "2rem",
             height: "2rem",
