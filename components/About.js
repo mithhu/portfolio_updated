@@ -1,12 +1,8 @@
 import React from "react";
 import Zoom from "react-medium-image-zoom";
-import Github from "../public/github.svg";
-import Cv from "../public/cv.svg";
-import Linkedin from "../public/linkedin.svg";
-import Link from "next/link";
-// import { Document, Page, BlobProvider } from "@react-pdf";
-// import { pdfjs } from "react-pdf";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import Github from "../public/icons/github.svg";
+import Cv from "../public/icons/cv.svg";
+import Linkedin from "../public/icons/linkedin.svg";
 
 function About() {
   return (
@@ -49,11 +45,9 @@ function About() {
             </a>
           </div>
           <div className="linkHover" style={{ padding: ".5rem" }}>
-            <Link href="/Mahamudul_Resume.pdf">
-              <a target="_blank">
-                <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
-              </a>
-            </Link>
+            <a href="/Mahamudul_Resume.pdf" target="_blank">
+              <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
+            </a>
           </div>
         </div>
         <div>
@@ -121,7 +115,7 @@ function About() {
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
             alt="Resume"
-            src="/resume.png"
+            src="/images/resume.png"
             width="500"
           />
         </Zoom>
