@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import { GA_TRACKING_ID } from "../lib/gtag";
 
 const APP_NAME = "Mithhu";
 const APP_DESCRIPTION = "Portfolio";
@@ -104,18 +105,21 @@ export default class extends Document {
             content="/icons/ms-icon-144x144.png"
           />
           <meta name="theme-color" content="#ffffff" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
           <script
             dangerouslySetInnerHTML={{
-              __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168236343-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'UA-168236343-1');
-            </script>            
-              `,
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
             }}
           />
           <title>Mithhu</title>

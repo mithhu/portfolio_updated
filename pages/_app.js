@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles.css";
 import "react-medium-image-zoom/dist/styles.css";
 import "react-vertical-timeline-component/style.min.css";
-
+import Router from "next/router";
 import Menu from "../public/open-menu.svg";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Achievements from "../components/Achievements";
+import * as gtag from "../lib/gtag";
 
 function App() {
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    Router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      Router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, []);
   const [toggleSidebar, settoggleSidebar] = useState(false);
   const [activeMenu, setActiveMenu] = useState("about");
   const handleChange = (menu) => {
