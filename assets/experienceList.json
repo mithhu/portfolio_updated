@@ -1,17 +1,27 @@
 {
   "data": [
     {
+      "date": "June 2020 - Present",
+      "position": "Software Engineer(Front-end)",
+      "company": "Evaly",
+      "key": 1,
+      "description": [
+        "Added and fixed features on 5 different sites to make the sites more interactive which have been used by 100k+ users daily.",
+        "Followed best practices of coding.",
+        "All code was reviewed, perfected, and pushed to production."
+      ],
+      "link": "https://evaly.com.bd/"
+    },
+    {
       "date": "August 2019 - Februray 2020",
       "position": "Junior Software Engineer(Front-end)",
       "company": "Tigrow Ltd",
-      "key": 1,
+      "key": 2,
       "description": [
         "Helped to design frontend architecture using React, Redux, React Router and TypeScript.",
         "Added a card-based drag and drop feature to an existing task management system to track task progress.",
         "Created a task issue page to assign tasks to the members.",
-        "Implemented an authentication system using JWT which includes access and refresh token to make the site more secure.",
-        "Mentored an intern who then successfully secured a permanent role.",
-        "Taught workflow of Redux to the company’s most senior developer."
+        "Implemented an authentication system using JWT which includes access and refresh token to make the site more secure."
       ],
       "link": "https://www.tigrow.co/"
     },
@@ -20,7 +30,7 @@
       "date": "March 2019 - July 2019",
       "position": "Intern Front-end Developer",
       "company": "Circle Fintech Ltd",
-      "key": 2,
+      "key": 3,
       "description": [
         "Built the frontend part of a payment gateway system to make it possible to do payment from any local digital payment service",
         "Enabled the option to open a bank account from home by developing the frontend part of an online registration system."
