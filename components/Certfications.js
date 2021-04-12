@@ -1,160 +1,177 @@
 import React from "react";
 
-function Projects() {
+function Certifications() {
   return (
     <div className="projectContainer">
       <h2
         className="componentsHeading"
         style={{ textAlign: "center", marginBottom: 0, fontSize: "xx-large" }}
       >
-        Projects
+        Certifications
       </h2>
       <div className="projects">
         <div className="figure">
-          <img alt="MusicTube" className="image" src="/images/music.png" />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://mymusictube.herokuapp.com/"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              MusicTube
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
-          <img alt="Chip-8 Emulator" className="image" src="/images/ch8.png" />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://ch8emulator.netlify.app/"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              Chip-8 Emulator
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
           <img
-            alt="Find Restaurant"
+            alt="HackerInter"
             className="image"
-            src="/images/restaurant.jpg"
+            src="/images/hackerInter.png"
           />
           <figcaption className="captionTransform">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://restaurant-review-mithhu.netlify.app/"
+              href="https://www.hackerrank.com/certificates/0d0faa66f4b4"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
                 color: "#e31b6d",
               }}
             >
-              Find Restaurant
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
-          <img alt="CatFight" className="image" src="/images/catFight.jpg" />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://mithhu.github.io/catfight"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              CatFight
+              Problem Solving (Intermediate)
             </a>
           </figcaption>
         </div>
         <div className="figure">
           <img
-            alt="Brooklyn Film Festival"
+            alt="hackerAdvanced"
             className="image"
-            src="/images/brooklyn.jpg"
+            src="/images/hackerAdvanced.png"
           />
           <figcaption className="captionTransform">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://mithhu.github.io/brooklynfilmfestival/"
+              href="https://www.hackerrank.com/certificates/5c9fcd464025"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
                 color: "#e31b6d",
               }}
             >
-              Brooklyn Film Festival
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
-          <img alt="Phone Store" className="image" src="/images/store.jpg" />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://react-phone-store-e-commerce.netlify.app/"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              Phone Store
-            </a>
-          </figcaption>
-        </div>
-        <div className="figure">
-          <img alt="Natours" className="image" src="/images/natours.jpg" />
-          <figcaption className="captionTransform">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://mithhu.github.io/natours"
-              style={{
-                padding: "0.3rem 2rem",
-                background: "#0f1126",
-                color: "#e31b6d",
-              }}
-            >
-              Natours
+              Problem Solving (Advanced)
             </a>
           </figcaption>
         </div>
         <div className="figure">
           <img
-            alt="Twitch TV Stream"
+            alt="hackerBasic"
             className="image"
-            src="/images/twitch.jpg"
+            src="/images/hackerBasic.png"
           />
           <figcaption className="captionTransform">
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://codepen.io/mithhu/full/jGrgMV"
+              href="https://www.hackerrank.com/certificates/4964365800a2"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
                 color: "#e31b6d",
               }}
             >
-              Twitch TV Stream
+              Problem Solving (Basic)
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="cAdvanced" className="image" src="/images/cAdvanced.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://courses.edx.org/certificates/7c393759eab749fbaca3a5fc1746bbe9"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              C: Advanced Data Types
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="cAdvanced" className="image" src="/images/cAdvanced.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://courses.edx.org/certificates/5b5f5d40150d44b091f031f8d051e56d"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              C: Memory Management
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="cPointers" className="image" src="/images/cPointers.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://courses.edx.org/certificates/9f3402215cf14609967e0044a4243c50"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              C: Pointers
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="fcc" className="image" src="/images/fcc.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.freecodecamp.org/certification/mithhu/javascript-algorithms-and-data-structures"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              JS Algo &amp; DS
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="test" className="image" src="/images/test.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://openclassrooms.com/en/course-certificates/1651117985"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              Test Your Website’s Interface
+            </a>
+          </figcaption>
+        </div>
+        <div className="figure">
+          <img alt="git" className="image" src="/images/git.png" />
+          <figcaption className="captionTransform">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://openclassrooms.com/en/course-certificates/5015340593"
+              style={{
+                padding: "0.3rem 2rem",
+                background: "#0f1126",
+                color: "#e31b6d",
+              }}
+            >
+              Manage your code with Git
             </a>
           </figcaption>
         </div>
@@ -163,4 +180,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Certifications;

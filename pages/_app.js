@@ -8,6 +8,8 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Achievements from "../components/Achievements";
+import Certifications from "../components/Certfications";
+
 import * as gtag from "../lib/gtag";
 
 function App() {
@@ -88,6 +90,20 @@ function App() {
         >
           Achievements
         </p>
+        <p
+          style={{
+            cursor: "pointer",
+
+            padding: ".5rem 1.5rem",
+            margin: 0,
+            background: `${activeMenu === "certifications" ? "black" : ""}`,
+            color: `${activeMenu === "certifications" ? "#e31b6d" : ""}`,
+          }}
+          className="menuHover"
+          onClick={() => handleChange("certifications")}
+        >
+          Certifications
+        </p>
       </div>
       <div>
         <Menu
@@ -112,6 +128,7 @@ function App() {
           {activeMenu === "projects" && <Projects />}
           {activeMenu === "experience" && <Experience />}
           {activeMenu === "achievements" && <Achievements />}
+          {activeMenu === "certifications" && <Certifications />}
         </div>
       </div>
     </div>

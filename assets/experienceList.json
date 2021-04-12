@@ -2,11 +2,12 @@
   "data": [
     {
       "date": "June 2020 - Present",
-      "position": "Software Engineer(Front-end)",
+      "position": "Software Engineer",
       "company": "Evaly",
       "key": 1,
       "description": [
-        "Added and fixed features on 5 different sites to make the sites more interactive which have been used by 100k+ users daily.",
+        "Accomplished a faster response time of client sites by caching and prefetching data using React Query which also made sites more interactive and user friendly.",
+        "Migrated admin site to TypeScript and followed best practices of coding.",
         "Followed best practices of coding.",
         "All code was reviewed, perfected, and pushed to production."
       ],
@@ -14,13 +15,12 @@
     },
     {
       "date": "August 2019 - Februray 2020",
-      "position": "Junior Software Engineer(Front-end)",
+      "position": "Junior Software Engineer",
       "company": "Tigrow Ltd",
       "key": 2,
       "description": [
         "Helped to design frontend architecture using React, Redux, React Router and TypeScript.",
-        "Added a card-based drag and drop feature to an existing task management system to track task progress.",
-        "Created a task issue page to assign tasks to the members.",
+        "Developed a Trello-like task management system with basic features of a social network.",
         "Implemented an authentication system using JWT which includes access and refresh token to make the site more secure."
       ],
       "link": "https://www.tigrow.co/"

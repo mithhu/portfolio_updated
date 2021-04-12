@@ -62,8 +62,16 @@ function About() {
           </h2>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             <p style={{ fontWeight: 600 }}>
-              JavaScript(ES6) | Python | C++ | ReactJS | Redux | TypeScript |
-              React Router | CSS3 | Sass | HTML5 | Firebase | git
+              <span style={{ fontWeight: 800 }}>Front-end: </span>
+              JavaScript(ES6) | Python | C++ | React | Redux | TypeScript |
+              React Query | Next | D3 | CSS3 React Router | CSS3 | Sass | HTML5
+            </p>
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <p style={{ fontWeight: 600 }}>
+              <span style={{ fontWeight: 800 }}>Backend: </span>
+              Python | Webpack | SQL | C++ | Node | Express | Object Oriented
+              Programming
             </p>
           </div>
         </div>
@@ -115,7 +123,7 @@ function About() {
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
             alt="Resume"
-            src="/images/resume.png"
+            src="/images/resume.jpg"
             width="500"
           />
         </Zoom>
