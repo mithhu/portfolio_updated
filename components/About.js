@@ -19,9 +19,12 @@ function About() {
         >
           Mithhu
         </h1>
-        <p style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}>
-          mithhu333@gmail.com | +8801742001078
-        </p>
+        <a
+          style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}
+          href="mailto:mithhu121212@gmail.com"
+        >
+          mithhu121212@gmail.com
+        </a>
         <div style={{ display: "flex" }}>
           <div className="linkHover" style={{ padding: ".5rem" }}>
             <a
@@ -64,14 +67,19 @@ function About() {
             <p style={{ fontWeight: 600 }}>
               <span style={{ fontWeight: 800 }}>Front-end: </span>
               JavaScript(ES6) | React | Redux | TypeScript | React Query | Next
-              | D3 | React Router | CSS3 | Sass | HTML5
+              | D3 | React Router | CSS3 | Sass | HTML5 | Three.js | Vue
             </p>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap" }}>
             <p style={{ fontWeight: 600 }}>
               <span style={{ fontWeight: 800 }}>Backend: </span>
-              Python | Webpack | SQL | C++ | Node | Express | Object Oriented
-              Programming
+              Python | SQL | C++ | Node | Express
+            </p>
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <p style={{ fontWeight: 600 }}>
+              <span style={{ fontWeight: 800 }}>Others: </span>
+              Webpack | Object Oriented Programming | Functional Programming
             </p>
           </div>
         </div>
@@ -123,7 +131,7 @@ function About() {
           <img
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
             alt="Resume"
-            src="/images/resume.jpg"
+            src="/images/resume.png"
             width="500"
           />
         </Zoom>
