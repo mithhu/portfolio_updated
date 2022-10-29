@@ -11,6 +11,7 @@ import Achievements from "../components/Achievements";
 import Certifications from "../components/Certfications";
 
 import * as gtag from "../lib/gtag";
+import DarkMode from "../components/DarkMode";
 
 function App() {
   useEffect(() => {
@@ -124,6 +125,7 @@ function App() {
           onClick={() => settoggleSidebar(false)}
           className={`components ${toggleSidebar ? "blurBackground" : ""}`}
         >
+          <DarkMode />
           {activeMenu === "about" && <About />}
           {activeMenu === "projects" && <Projects />}
           {activeMenu === "experience" && <Experience />}

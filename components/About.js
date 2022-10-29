@@ -3,54 +3,69 @@ import Zoom from "react-medium-image-zoom";
 import Github from "../public/icons/github.svg";
 import Cv from "../public/icons/cv.svg";
 import Linkedin from "../public/icons/linkedin.svg";
+import { BsBagCheck } from "react-icons/bs";
 
 function About() {
   return (
     <div className="about">
       <div style={{ flex: 1, paddingRight: "2rem" }}>
-        <h1
-          style={{
-            marginBottom: ".2rem",
-            marginTop: "0",
-            fontSize: "5rem",
-            letterSpacing: "0.5rem",
-            fontWeight: "lighter",
-          }}
-        >
-          Mithhu
-        </h1>
-        <a
-          style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}
-          href="mailto:mithhu121212@gmail.com"
-        >
-          mithhu121212@gmail.com
-        </a>
-        <div style={{ display: "flex" }}>
-          <div className="linkHover" style={{ padding: ".5rem" }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/mithhu"
-            >
-              <Linkedin
-                style={{ width: "2rem", height: "2rem" }}
-                alt="LinkedIn"
-              />
-            </a>
-          </div>
-          <div className="linkHover" style={{ padding: ".5rem" }}>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/mithhu"
-            >
-              <Github style={{ width: "2rem", height: "2rem" }} alt="Github" />
-            </a>
-          </div>
-          <div className="linkHover" style={{ padding: ".5rem" }}>
-            <a href="/Mahamudul_Resume.pdf" target="_blank">
-              <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
-            </a>
+        <div class="about_mobile">
+          <h1
+            style={{
+              marginBottom: ".2rem",
+              marginTop: "0",
+              fontSize: "5rem",
+              letterSpacing: "0.5rem",
+              fontWeight: "lighter",
+            }}
+          >
+            Mithhu
+          </h1>
+          <a
+            style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}
+            href="mailto:mithhu121212@gmail.com"
+          >
+            mithhu121212@gmail.com
+          </a>
+          <div style={{ display: "flex" }}>
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/mithhu"
+              >
+                <Linkedin
+                  style={{ width: "2rem", height: "2rem" }}
+                  alt="LinkedIn"
+                />
+              </a>
+            </div>
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/mithhu"
+              >
+                <Github
+                  style={{ width: "2rem", height: "2rem" }}
+                  alt="Github"
+                />
+              </a>
+            </div>
+
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a href="/Mahamudul_Resume.pdf" target="_blank">
+                <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
+              </a>
+            </div>
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a href="/Mahamudul_Portfolio.pdf" target="_blank">
+                <BsBagCheck
+                  style={{ width: "2rem", height: "2rem", color: "#000000" }}
+                  alt="Portfolio"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div>

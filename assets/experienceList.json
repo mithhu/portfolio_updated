@@ -1,12 +1,28 @@
 {
   "data": [
     {
-      "date": "June 2020 - Present",
-      "position": "Software Engineer",
-      "company": "Evaly",
+      "date": "November 2021 - October 2022",
+      "position": "Senior Software Engineer",
+      "company": "Punag",
       "key": 1,
       "description": [
+        "Built a chat application like Telegram using GetStream.",
+        "Migrated a WordPress admin site to React, NextJS, and TypeScript and followed best practices of coding.",
+        "Achieved 20% faster site using server-side rendering, caching, and prefetching data.",
+        "Used React Testing Library and Jest to write test cases for whole project.",
+        "Supervised a colleague"
+      ],
+      "link": "https://evaly.com.bd/"
+    },
+    {
+      "date": "June 2020 - October 2021",
+      "position": "Software Engineer",
+      "company": "Evaly",
+      "key": 2,
+      "description": [
+        "Led admin project to integrate 3 different services for riders which led to 30% of improvement in business.",
         "Accomplished a faster response time of client sites by caching and prefetching data using React Query which also made sites more interactive and user friendly.",
+        "Developed analytical dashboards that show all kinds of business statistics using React ChartJS, and Nivo.",
         "Migrated admin site to TypeScript and followed best practices of coding.",
         "Followed best practices of coding.",
         "All code was reviewed, perfected, and pushed to production."
@@ -17,7 +33,7 @@
       "date": "August 2019 - Februray 2020",
       "position": "Junior Software Engineer",
       "company": "Tigrow Ltd",
-      "key": 2,
+      "key": 3,
       "description": [
         "Helped to design frontend architecture using React, Redux, React Router and TypeScript.",
         "Developed a Trello-like task management system with basic features of a social network.",
@@ -30,7 +46,7 @@
       "date": "March 2019 - July 2019",
       "position": "Intern Front-end Developer",
       "company": "Circle Fintech Ltd",
-      "key": 3,
+      "key": 4,
       "description": [
         "Built the frontend part of a payment gateway system to make it possible to do payment from any local digital payment service",
         "Enabled the option to open a bank account from home by developing the frontend part of an online registration system."

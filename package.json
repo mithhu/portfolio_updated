@@ -13,6 +13,7 @@
     "next-pwa": "^2.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-icons": "^4.6.0",
     "react-medium-image-zoom": "^4.3.0",
     "react-pdf": "^4.1.0",
     "react-vertical-timeline-component": "^2.6.2"

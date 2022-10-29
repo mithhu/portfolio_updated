@@ -21,7 +21,7 @@ function Experience() {
         Experience
       </h2>
 
-      <VerticalTimeline>
+      <VerticalTimeline layout="1-column-left">
         {experiences.map((experience) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

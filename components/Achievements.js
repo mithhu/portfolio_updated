@@ -22,7 +22,7 @@ function Achievements() {
         Achievements
       </h2>
 
-      <VerticalTimeline>
+      <VerticalTimeline layout="1-column-left">
         {achievements.map((achievement) => (
           <VerticalTimelineElement
             key={achievement.key}
