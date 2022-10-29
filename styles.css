@@ -247,9 +247,9 @@ a {
 }
 
 .vertical-timeline * {
-  color: #ffffff;
+  color: #000000;
 }
 
 .dark .vertical-timeline * {
-  color: #000000;
+  color: #ffffff;
 }
