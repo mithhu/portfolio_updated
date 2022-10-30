@@ -9,6 +9,7 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Achievements from "../components/Achievements";
 import Certifications from "../components/Certfications";
+import { AiOutlineFilePdf } from "react-icons/ai";
 
 import * as gtag from "../lib/gtag";
 import DarkMode from "../components/DarkMode";
@@ -105,6 +106,24 @@ function App() {
         >
           Certifications
         </p>
+        <a href="/Mahamudul_Portfolio.pdf" target="_blank">
+          <p
+            style={{
+              cursor: "pointer",
+
+              padding: ".5rem 1.5rem",
+              margin: 0,
+              background: `${activeMenu === "portfolio" ? "black" : ""}`,
+              color: `${activeMenu === "portfolio" ? "#e31b6d" : "#ffffff"}`,
+            }}
+            className="menuHover"
+            onClick={() => {
+              handleChange("about");
+            }}
+          >
+            Portfolio
+          </p>
+        </a>
       </div>
       <div>
         <Menu

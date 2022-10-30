@@ -253,3 +253,11 @@ a {
 .dark .vertical-timeline * {
   color: #ffffff;
 }
+
+.linkColor {
+  color: #000000;
+}
+
+.dark .linkColor {
+  color: #ffffff;
+}

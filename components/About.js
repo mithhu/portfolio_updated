@@ -1,9 +1,9 @@
 import React from "react";
 import Zoom from "react-medium-image-zoom";
-import Github from "../public/icons/github.svg";
-import Cv from "../public/icons/cv.svg";
-import Linkedin from "../public/icons/linkedin.svg";
-import { BsBagCheck } from "react-icons/bs";
+import { AiFillGithub, AiFillLinkedin, AiOutlineFilePdf } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
+import { SiLeetcode } from "react-icons/si";
+import { FaHackerrank } from "react-icons/fa";
 
 function About() {
   return (
@@ -22,7 +22,12 @@ function About() {
             Mithhu
           </h1>
           <a
-            style={{ margin: 0, paddingLeft: "0.5rem", fontWeight: 600 }}
+            style={{
+              margin: 0,
+              paddingLeft: "0.5rem",
+              fontWeight: 600,
+              color: "#e31b6d",
+            }}
             href="mailto:mithhu121212@gmail.com"
           >
             mithhu121212@gmail.com
@@ -34,9 +39,10 @@ function About() {
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/mithhu"
               >
-                <Linkedin
+                <AiFillLinkedin
                   style={{ width: "2rem", height: "2rem" }}
                   alt="LinkedIn"
+                  className="linkColor"
                 />
               </a>
             </div>
@@ -46,23 +52,55 @@ function About() {
                 rel="noopener noreferrer"
                 href="https://github.com/mithhu"
               >
-                <Github
+                <AiFillGithub
                   style={{ width: "2rem", height: "2rem" }}
                   alt="Github"
+                  className="linkColor"
+                />
+              </a>
+            </div>
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://leetcode.com/mithhu1/"
+              >
+                <SiLeetcode
+                  style={{ width: "2rem", height: "2rem" }}
+                  alt="LeetCode"
+                  className="linkColor"
+                />
+              </a>
+            </div>
+            <div className="linkHover" style={{ padding: ".5rem" }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.hackerrank.com/mithhu"
+              >
+                <FaHackerrank
+                  style={{ width: "2rem", height: "2rem" }}
+                  alt="HackerRank"
+                  className="linkColor"
                 />
               </a>
             </div>
 
             <div className="linkHover" style={{ padding: ".5rem" }}>
               <a href="/Mahamudul_Resume.pdf" target="_blank">
-                <Cv style={{ width: "2rem", height: "2rem" }} alt="Resume" />
+                <CgFileDocument
+                  style={{ width: "2rem", height: "2rem" }}
+                  alt="Resume"
+                  className="linkColor"
+                />
               </a>
             </div>
             <div className="linkHover" style={{ padding: ".5rem" }}>
               <a href="/Mahamudul_Portfolio.pdf" target="_blank">
-                <BsBagCheck
-                  style={{ width: "2rem", height: "2rem", color: "#000000" }}
+                <AiOutlineFilePdf
+                  style={{ width: "2rem", height: "2rem" }}
                   alt="Portfolio"
+                  className="linkColor"
                 />
               </a>
             </div>
