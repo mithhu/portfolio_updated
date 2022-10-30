@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -6,9 +6,12 @@ import {
 // import "react-vertical-timeline-component/style.min.css";
 
 import * as achievementList from "../assets/achievementList.json";
+import { scrollToTop } from "../utils";
 
 function Achievements() {
   const achievements = achievementList.data;
+  useEffect(scrollToTop, []);
+
   return (
     <div className="experienceContainer">
       <h2

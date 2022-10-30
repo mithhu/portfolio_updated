@@ -14,7 +14,7 @@ export default function DarkMode() {
     }
   };
   return (
-    <div style={{ right: 0, top: 10, position: "fixed" }}>
+    <div className="darkMode">
       <button
         onClick={() => toggleTheme()}
         style={{ cursor: "pointer", border: "none", background: "none" }}

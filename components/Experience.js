@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
 import * as experienceList from "../assets/experienceList.json";
+import { scrollToTop } from "../utils";
 
 function Experience() {
   const experiences = experienceList.data;
+  useEffect(scrollToTop, []);
   return (
     <div className="experienceContainer">
       <h2

@@ -9,7 +9,7 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Achievements from "../components/Achievements";
 import Certifications from "../components/Certfications";
-import { AiOutlineFilePdf } from "react-icons/ai";
+import Portfolio from "../components/Portfolio";
 
 import * as gtag from "../lib/gtag";
 import DarkMode from "../components/DarkMode";
@@ -30,6 +30,12 @@ function App() {
     setActiveMenu(menu);
     settoggleSidebar(!toggleSidebar);
   };
+
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div style={{ display: "flex" }}>
       <div
@@ -106,24 +112,20 @@ function App() {
         >
           Certifications
         </p>
-        <a href="/Mahamudul_Portfolio.pdf" target="_blank">
-          <p
-            style={{
-              cursor: "pointer",
+        <p
+          style={{
+            cursor: "pointer",
 
-              padding: ".5rem 1.5rem",
-              margin: 0,
-              background: `${activeMenu === "portfolio" ? "black" : ""}`,
-              color: `${activeMenu === "portfolio" ? "#e31b6d" : "#ffffff"}`,
-            }}
-            className="menuHover"
-            onClick={() => {
-              handleChange("about");
-            }}
-          >
-            Portfolio
-          </p>
-        </a>
+            padding: ".5rem 1.5rem",
+            margin: 0,
+            background: `${activeMenu === "portfolio" ? "black" : ""}`,
+            color: `${activeMenu === "portfolio" ? "#e31b6d" : ""}`,
+          }}
+          className="menuHover"
+          onClick={() => handleChange("portfolio")}
+        >
+          Work Portfolio
+        </p>
       </div>
       <div>
         <Menu
@@ -150,6 +152,7 @@ function App() {
           {activeMenu === "experience" && <Experience />}
           {activeMenu === "achievements" && <Achievements />}
           {activeMenu === "certifications" && <Certifications />}
+          {activeMenu === "portfolio" && <Portfolio />}
         </div>
       </div>
     </div>

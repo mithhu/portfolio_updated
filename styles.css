@@ -90,6 +90,16 @@ a {
   padding-top: 2rem;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  padding-top: 2rem;
+  height: 70vh;
+}
+
 .linkHover {
   transition: 0.3s;
 }
@@ -260,4 +270,11 @@ a {
 
 .dark .linkColor {
   color: #ffffff;
+}
+
+.darkMode {
+  right: 0;
+  top: 10;
+  position: fixed;
+  z-index: 1;
 }

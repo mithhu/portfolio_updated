@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { scrollToTop } from "../utils";
 
 function Projects() {
+  useEffect(scrollToTop, []);
   return (
     <div className="projectContainer">
       <h2
@@ -11,7 +13,12 @@ function Projects() {
       </h2>
       <div className="projects">
         <div className="figure">
-          <img alt="MusicTube" className="image" src="/images/music.png" />
+          <img
+            loading="lazy"
+            alt="MusicTube"
+            className="image"
+            src="/images/music.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -28,7 +35,12 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Chip-8 Emulator" className="image" src="/images/ch8.png" />
+          <img
+            loading="lazy"
+            alt="Chip-8 Emulator"
+            className="image"
+            src="/images/ch8.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -46,6 +58,7 @@ function Projects() {
         </div>
         <div className="figure">
           <img
+            loading="lazy"
             alt="Find Restaurant"
             className="image"
             src="/images/restaurant.jpg"
@@ -66,7 +79,12 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="CatFight" className="image" src="/images/catFight.jpg" />
+          <img
+            loading="lazy"
+            alt="CatFight"
+            className="image"
+            src="/images/catFight.jpg"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -84,6 +102,7 @@ function Projects() {
         </div>
         <div className="figure">
           <img
+            loading="lazy"
             alt="Brooklyn Film Festival"
             className="image"
             src="/images/brooklyn.jpg"
@@ -104,7 +123,12 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Phone Store" className="image" src="/images/store.jpg" />
+          <img
+            loading="lazy"
+            alt="Phone Store"
+            className="image"
+            src="/images/store.jpg"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -121,7 +145,12 @@ function Projects() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="Natours" className="image" src="/images/natours.jpg" />
+          <img
+            loading="lazy"
+            alt="Natours"
+            className="image"
+            src="/images/natours.jpg"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -139,6 +168,7 @@ function Projects() {
         </div>
         <div className="figure">
           <img
+            loading="lazy"
             alt="Twitch TV Stream"
             className="image"
             src="/images/twitch.jpg"

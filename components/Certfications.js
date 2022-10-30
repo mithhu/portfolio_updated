@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { scrollToTop } from "../utils";
 
 function Certifications() {
+  useEffect(scrollToTop, []);
   return (
     <div className="projectContainer">
       <h2
@@ -12,6 +14,7 @@ function Certifications() {
       <div className="projects">
         <div className="figure">
           <img
+            loading="lazy"
             alt="HackerInter"
             className="image"
             src="/images/hackerInter.png"
@@ -33,6 +36,7 @@ function Certifications() {
         </div>
         <div className="figure">
           <img
+            loading="lazy"
             alt="hackerAdvanced"
             className="image"
             src="/images/hackerAdvanced.png"
@@ -54,6 +58,7 @@ function Certifications() {
         </div>
         <div className="figure">
           <img
+            loading="lazy"
             alt="hackerBasic"
             className="image"
             src="/images/hackerBasic.png"
@@ -74,7 +79,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="cAdvanced" className="image" src="/images/cAdvanced.png" />
+          <img
+            loading="lazy"
+            alt="cAdvanced"
+            className="image"
+            src="/images/cAdvanced.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -91,7 +101,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="cAdvanced" className="image" src="/images/cAdvanced.png" />
+          <img
+            loading="lazy"
+            alt="cAdvanced"
+            className="image"
+            src="/images/cAdvanced.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -108,7 +123,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="cPointers" className="image" src="/images/cPointers.png" />
+          <img
+            loading="lazy"
+            alt="cPointers"
+            className="image"
+            src="/images/cPointers.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -125,7 +145,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="fcc" className="image" src="/images/fcc.png" />
+          <img
+            loading="lazy"
+            alt="fcc"
+            className="image"
+            src="/images/fcc.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -142,7 +167,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="test" className="image" src="/images/test.png" />
+          <img
+            loading="lazy"
+            alt="test"
+            className="image"
+            src="/images/test.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"
@@ -159,7 +189,12 @@ function Certifications() {
           </figcaption>
         </div>
         <div className="figure">
-          <img alt="git" className="image" src="/images/git.png" />
+          <img
+            loading="lazy"
+            alt="git"
+            className="image"
+            src="/images/git.png"
+          />
           <figcaption className="captionTransform">
             <a
               target="_blank"

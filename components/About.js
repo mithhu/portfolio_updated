@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Zoom from "react-medium-image-zoom";
 import { AiFillGithub, AiFillLinkedin, AiOutlineFilePdf } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
+import { scrollToTop } from "../utils";
 
 function About() {
+  useEffect(scrollToTop, []);
   return (
     <div className="about">
       <div style={{ flex: 1, paddingRight: "2rem" }}>
@@ -182,6 +184,7 @@ function About() {
       <div className="zoomImage" style={{ flex: 1, alignItems: "center" }}>
         <Zoom zoomMargin={40}>
           <img
+            loading="lazy"
             style={{ boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}
             alt="Resume"
             src="/images/resume.png"
