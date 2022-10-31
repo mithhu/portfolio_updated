@@ -45,7 +45,7 @@ function Projects() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://ch8emulator.netlify.app/"
+              href="https://ch8emulator.vercel.app/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
@@ -67,7 +67,7 @@ function Projects() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://restaurant-review-mithhu.netlify.app/"
+              href="https://restaurant-review-one.vercel.app/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
@@ -133,7 +133,7 @@ function Projects() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://react-phone-store-e-commerce.netlify.app/"
+              href="https://phone-store-three.vercel.app/"
               style={{
                 padding: "0.3rem 2rem",
                 background: "#0f1126",
