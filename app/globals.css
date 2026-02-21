@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: #0a0a0f;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00f0ff33;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00f0ff66;
+  }
+
+  ::selection {
+    background-color: rgba(0, 240, 255, 0.2);
+    color: #00f0ff;
+  }
+}
+
+@layer components {
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5), 0 0 20px rgba(0, 240, 255, 0.3);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.3), inset 0 0 5px rgba(0, 240, 255, 0.1);
+  }
+
+  .glow-border-hover:hover {
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4), 0 0 30px rgba(0, 240, 255, 0.2),
+      inset 0 0 15px rgba(0, 240, 255, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 240, 255, 0.1);
+  }
+
+  .terminal-prompt::before {
+    content: "$ ";
+    color: #00ff88;
+    font-family: var(--font-jetbrains-mono), monospace;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-2;
+    background: linear-gradient(135deg, #00f0ff, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-subheading {
+    @apply text-gray-400 font-mono text-sm mb-12;
+  }
+
+  .nav-glow {
+    position: relative;
+  }
+
+  .nav-glow::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00f0ff;
+    box-shadow: 0 0 10px #00f0ff;
+    transition: width 0.3s ease;
+  }
+
+  .nav-glow:hover::after,
+  .nav-glow.active::after {
+    width: 100%;
+  }
+
+  .cursor-glow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cursor-glow::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .cursor-glow:hover::before {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #00f0ff, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
