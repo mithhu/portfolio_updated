@@ -2,14 +2,7 @@
 
 Personal portfolio site built with Next.js 14, Tailwind CSS, and Framer Motion.
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
+**Live**: [mithhu.vercel.app](https://mithhu.vercel.app)
 
 ## Tech Stack
 
@@ -20,10 +13,18 @@ Open [http://localhost:3000](http://localhost:3000).
 - Framer Motion
 - tsparticles
 
-## Deployment
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Build
 
 ```bash
 npm run build
+npm start
 ```
-
-Deploy to Vercel, Netlify, or any static hosting provider.
