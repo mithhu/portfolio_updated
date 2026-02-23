@@ -20,6 +20,14 @@ export const projects: Project[] = [
     status: "In Active Development",
   },
   {
+    title: "Cricket Fever",
+    image: "/images/cricfever.png",
+    link: "https://cricfever.vercel.app/",
+    description:
+      "A 3D browser-based cricket game with an immersive batting experience. Features multiple shot types (drives, pulls, cuts, lofted shots), player profiles with high score tracking, and quick match modes with 5 or 10 overs.",
+    tech: ["Three.js", "JavaScript", "3D Graphics", "Web Audio"],
+  },
+  {
     title: "Chip-8 Emulator",
     image: "/images/ch8.png",
     link: "https://ch8emulator.vercel.app/",
