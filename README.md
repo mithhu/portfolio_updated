@@ -6,6 +6,7 @@ Next.js 14 portfolio with a responsive editorial layout. Career history is maint
 
 - `npm run dev` — local preview
 - `npm run build` — production build and type checking
+- `/work/openmemory` — OpenMemory case study, evaluation, and captioned demo
 - `/resume` — current, printable career overview (replaces the outdated PDF)
 
 OpenMemory media uses fictional demonstration memories. The captioned walkthrough is an edited product demonstration, not a latency or model accuracy benchmark. Project evaluation numbers link to the published research and include the majority baseline and limitations.

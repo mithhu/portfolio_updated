@@ -919,3 +919,121 @@ details[open] > summary > span {
     font-size: 11px;
   }
 }
+
+/* Keep the homepage focused on breadth; the case study holds the deep dive. */
+.balanced-work {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 52px 36px;
+}
+.balanced-work .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.balanced-work .card-image {
+  width: 100%;
+}
+.balanced-work .card-image img {
+  aspect-ratio: 1.85;
+}
+.balanced-work .tags {
+  margin-bottom: 22px;
+}
+.project-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.project-summary div {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 8px;
+}
+.project-summary dt {
+  font-weight: 600;
+  color: var(--ink);
+}
+.project-summary dd {
+  margin: 0;
+}
+.project-cta {
+  margin-top: auto;
+  display: inline-flex;
+  gap: 18px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--ink);
+  font-size: 12px;
+}
+.earlier-career summary {
+  padding: 20px 0;
+  font-size: 13px;
+}
+.earlier-career .career-row:first-child {
+  border-top: 1px solid var(--line);
+}
+.earlier-career .career-row:last-child {
+  border-bottom: 0;
+}
+.case-study-page {
+  padding-top: 45px;
+  padding-bottom: 70px;
+}
+.case-back {
+  display: inline-block;
+  margin-bottom: 65px;
+}
+.case-study-page .project-intro h1 {
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  margin-top: 15px;
+}
+.case-study-page .project-intro {
+  margin-bottom: 10px;
+}
+.case-study-page .demo {
+  margin-bottom: 35px;
+}
+.case-end {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 13px;
+}
+@media (max-width: 640px) {
+  .balanced-work {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .balanced-work .card-image img {
+    aspect-ratio: 2;
+  }
+  .balanced-work .project-card > p,
+  .project-summary {
+    font-size: 13px;
+  }
+  .balanced-work .tags {
+    margin-top: 14px;
+    margin-bottom: 12px;
+  }
+  .case-study-page {
+    padding-top: 30px;
+  }
+  .case-back {
+    margin-bottom: 40px;
+  }
+  .case-study-page .project-intro h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+  }
+  .case-end {
+    flex-direction: column;
+  }
+}
+.case-grid .case-subheading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
