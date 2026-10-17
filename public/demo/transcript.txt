@@ -1,0 +1,15 @@
+Your memories shouldn’t need a form. OpenMemory turns a simple thought into something you can return to.
+
+First, a book. I want to read Sapiens. That’s an intention, not a finished book. The subject and the action both matter.
+
+On this Mac, a fine-tuned model classifies the note using M L X. A separate local model extracts the details. These are actual app captures, with processing waits shortened.
+
+The review shows Book, Sapiens, and something I want to do. Check it, edit it, and confirm. Nothing is saved before you say so.
+
+Now a movie. I watched Arrival and loved it. The model recognizes a movie, but leaves the action uncertain. Review lets you choose what happened before saving.
+
+The book stays on your wishlist. The movie becomes a watched film you loved, after confirmation. Both are saved in this browser, and survive a reload.
+
+The adapter trained on seven hundred and thirty examples. In a two hundred note test, joint accuracy rose from sixty-seven to seventy-six point five percent, still below the eighty-one percent majority baseline. It remains experimental.
+
+Explore the app, research code, and published model. OpenMemory. A I suggests. You decide what becomes a memory.

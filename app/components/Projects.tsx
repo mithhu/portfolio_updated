@@ -1,92 +1,187 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
-import SectionWrapper from "./SectionWrapper";
-import GlowCard from "./GlowCard";
+import DemoVideo from "./DemoVideo";
 import { projects } from "../data/projects";
-import { FiExternalLink } from "react-icons/fi";
-import { HiOutlineSparkles } from "react-icons/hi2";
 
 export default function Projects() {
   return (
-    <SectionWrapper id="projects">
-      <div className="text-center mb-16">
-        <h2 className="section-heading">Projects</h2>
-        <p className="section-subheading">&gt; ls ~/projects/</p>
-      </div>
-
-      <div className="space-y-8">
-        {projects.map((project, index) => (
-          <motion.div
-            key={project.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+    <section id="projects" className="work-section section-pad">
+      <div className="shell">
+        <div className="section-heading">
+          <span className="eyebrow">01 / Selected work</span>
+          <h2>Ideas, made tangible.</h2>
+        </div>
+        <article className="featured-project">
+          <div className="project-intro">
+            <div>
+              <span className="eyebrow accent">
+                Featured / Product + research
+              </span>
+              <h3>
+                OpenMemory<span className="accent">↗</span>
+              </h3>
+            </div>
+            <p>
+              A place for the things you don’t want to forget. Natural notes
+              become structured memories, with you making the final call.
+            </p>
+          </div>
+          <a
+            className="project-image"
+            href="https://open-memory-ai.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
           >
+            <Image
+              src="/images/openmemory.png"
+              alt="OpenMemory library showing fictional book and movie memories, with progress and review controls"
+              width={1280}
+              height={720}
+              sizes="(max-width: 720px) 100vw, 1100px"
+              priority
+            />
+            <span className="image-label">
+              Inside the app · fictional demonstration memories
+            </span>
+          </a>
+          <div className="case-grid">
+            <div>
+              <h4>A complete path from note to memory.</h4>
+              <p>
+                Text or optional ElevenLabs transcription → classification →
+                separate extraction → human review → an explicit save to a
+                browser vault, with optional encryption.
+              </p>
+              <p>
+                The hosted app starts with manual capture and explicit OpenAI
+                opt-in. Local inference uses Ollama or a paired, running Mac
+                companion for native MLX.
+              </p>
+              <div className="tags">
+                {projects[0].tech.map((t) => (
+                  <span key={t}>{t}</span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4>Fine-tuning, with the evidence attached.</h4>
+              <p>
+                I directed an AI-assisted build and ran MLX LoRA training on a
+                frozen, 4-bit Qwen3.5-9B base: 730 examples and 638,976
+                trainable adapter values.
+              </p>
+              <table className="results">
+                <caption>
+                  Frozen 200-example test · category + intent correct
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Comparison</th>
+                    <th scope="col">Joint accuracy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Unadapted base</th>
+                    <td>67.0%</td>
+                  </tr>
+                  <tr className="adapter-row">
+                    <th scope="row">Fine-tuned adapter</th>
+                    <td>76.5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Constant majority baseline</th>
+                    <td>81.0%</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="small-note">
+                A 9.5-point gain over its base; below the majority baseline.
+                AI-assigned labels, class imbalance and regressions limit the
+                result. Experimental, not production-qualified; the released
+                adapter does not classify TV series.
+              </p>
+            </div>
+          </div>
+          <div className="project-links">
             <a
-              href={project.link}
+              className="button"
+              href="https://open-memory-ai.vercel.app/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="block"
+              rel="noreferrer"
             >
-              <GlowCard className="group overflow-hidden">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="relative h-64 md:h-auto min-h-[280px] overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      priority={index === 0}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-dark-900/80 hidden md:block" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent md:hidden" />
-                  </div>
-
-                  <div className="p-8 flex flex-col justify-center">
-                    {project.status && (
-                      <div className="mb-4">
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-neon-green/10 text-neon-green border border-neon-green/30">
-                          <HiOutlineSparkles size={12} />
-                          {project.status}
-                        </span>
-                      </div>
-                    )}
-
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-100 mb-3 group-hover:text-cyan-400 transition-colors">
-                      {project.title}
-                    </h3>
-
-                    <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.tech.map((t) => (
-                        <span
-                          key={t}
-                          className="px-2.5 py-1 text-[11px] font-mono rounded-md border border-cyan-400/20
-                                     text-cyan-400/80 bg-cyan-400/5"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center gap-2 text-sm font-mono text-cyan-400 group-hover:gap-3 transition-all">
-                      <FiExternalLink size={14} />
-                      <span>Visit Live Site</span>
-                    </div>
-                  </div>
-                </div>
-              </GlowCard>
+              Try OpenMemory <span aria-hidden="true">↗</span>
             </a>
-          </motion.div>
-        ))}
+            <a
+              href="https://github.com/mithhu/OpenMemory"
+              target="_blank"
+              rel="noreferrer"
+            >
+              App source ↗
+            </a>
+            <a
+              href="https://github.com/mithhu/openmemory-local-classifier-research"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Research &amp; evaluation ↗
+            </a>
+            <a
+              href="https://huggingface.co/mithhu333/openmemory-qwen3.5-9b-mlx-classifier-v1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Model adapter ↗
+            </a>
+          </div>
+          <DemoVideo />
+        </article>
+        <div className="more-work">
+          {projects.slice(1).map((project, index) => (
+            <article className="project-card" key={project.title}>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="card-image"
+              >
+                <Image
+                  src={project.image}
+                  alt={`${project.title} application preview`}
+                  width={800}
+                  height={500}
+                  sizes="(max-width: 720px) 100vw, 33vw"
+                />
+              </a>
+              <div className="card-topline">
+                <span className="eyebrow">
+                  0{index + 2} /{" "}
+                  {index === 0
+                    ? "AI tools"
+                    : index === 1
+                      ? "Interactive play"
+                      : "Systems exploration"}
+                </span>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <h3>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  {project.title}
+                </a>
+              </h3>
+              <p>
+                {index === 0
+                  ? "An AI-powered photo editor for transforming and enhancing images, from background removal to generative edits. In active development."
+                  : project.description}
+              </p>
+              <div className="tags">
+                {project.tech.map((t) => (
+                  <span key={t}>{t}</span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }

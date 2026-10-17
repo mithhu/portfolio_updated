@@ -1,30 +1,13 @@
-# Mahamudul Hasan — Portfolio
+# Mahamudul Hasan Mithhu — Portfolio
 
-Personal portfolio site built with Next.js 14, Tailwind CSS, and Framer Motion.
+**Live:** [mithhu.vercel.app](https://mithhu.vercel.app)
 
-**Live**: [mithhu.vercel.app](https://mithhu.vercel.app)
+Next.js 14 portfolio with a responsive editorial layout. Career history is maintained in `app/data/experience.ts`; projects in `app/data/projects.ts`.
 
-## Tech Stack
+- `npm run dev` — local preview
+- `npm run build` — production build and type checking
+- `/resume` — current, printable career overview (replaces the outdated PDF)
 
-- Next.js 14 (App Router)
-- React 18
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- tsparticles
+OpenMemory media uses fictional demonstration memories. The captioned walkthrough is an edited product demonstration, not a latency or model accuracy benchmark. Project evaluation numbers link to the published research and include the majority baseline and limitations.
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Build
-
-```bash
-npm run build
-npm start
-```
+No autoplay, third-party font requests, particle canvas, or scroll-triggered content hiding. Reduced-motion preferences are respected.

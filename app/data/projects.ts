@@ -10,13 +10,22 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "OpenMemory",
+    image: "/images/openmemory.png",
+    link: "https://open-memory-ai.vercel.app/",
+    description:
+      "Local-first memory capture with human review, a locally fine-tuned Qwen classifier, and openly published evaluation.",
+    tech: ["React", "TypeScript", "MLX", "LoRA", "Ollama", "IndexedDB"],
+    featured: true,
+    status: "Product + research",
+  },
+  {
     title: "PhotosAI",
     image: "/images/photosai.png",
     link: "https://photosai.vercel.app/",
     description:
       "An AI-powered photo editor that I'm actively building. PhotosAI lets users transform, enhance, and manipulate images using cutting-edge AI models — from background removal and style transfer to intelligent retouching and generative edits. Designed with a sleek, intuitive interface for both casual users and professionals.",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "AI/ML APIs"],
-    featured: true,
     status: "In Active Development",
   },
   {

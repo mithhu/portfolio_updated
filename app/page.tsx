@@ -5,17 +5,21 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
-
 export default function Home() {
   return (
-    <main className="relative bg-dark-900 min-h-screen">
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Achievements />
+      <main id="main">
+        <Hero />
+        <Projects />
+        <Experience />
+        <About />
+        <Achievements />
+      </main>
       <Contact />
-    </main>
+    </>
   );
 }

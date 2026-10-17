@@ -6,14 +6,7 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     name: "Languages",
-    skills: [
-      "TypeScript",
-      "JavaScript",
-      "Golang",
-      "Python",
-      "SQL",
-      "C#",
-    ],
+    skills: ["TypeScript", "JavaScript", "Golang", "Python", "SQL", "C#"],
   },
   {
     name: "Technologies",
@@ -49,8 +42,16 @@ export const skillCategories: SkillCategory[] = [
 ];
 
 export const socialLinks = [
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/mithhu", icon: "linkedin" },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/mithhu",
+    icon: "linkedin",
+  },
   { name: "GitHub", url: "https://github.com/mithhu", icon: "github" },
   { name: "LeetCode", url: "https://leetcode.com/mithhu1/", icon: "leetcode" },
-  { name: "HackerRank", url: "https://www.hackerrank.com/mithhu", icon: "hackerrank" },
+  {
+    name: "HackerRank",
+    url: "https://www.hackerrank.com/mithhu",
+    icon: "hackerrank",
+  },
 ];

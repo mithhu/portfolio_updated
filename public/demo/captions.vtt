@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:00.144 --> 00:00:02.000
+Your memories shouldn’t need a form.
+
+2
+00:00:02.192 --> 00:00:05.760
+OpenMemory turns a simple thought into something you can
+
+3
+00:00:05.817 --> 00:00:09.040
+return to.  First, a book.
+
+4
+00:00:09.240 --> 00:00:10.720
+I want to read Sapiens.
+
+5
+00:00:10.880 --> 00:00:13.760
+That’s an intention, not a finished book.
+
+6
+00:00:13.900 --> 00:00:16.640
+The subject and the action both matter.
+
+7
+00:00:17.733 --> 00:00:20.720
+On this Mac, a fine-tuned model classifies the note
+
+8
+00:00:20.787 --> 00:00:22.320
+using M L X.
+
+9
+00:00:22.520 --> 00:00:25.360
+A separate local model extracts the details.
+
+10
+00:00:25.493 --> 00:00:29.680
+These are actual app captures, with processing waits shortened.
+
+11
+00:00:30.705 --> 00:00:34.160
+The review shows Book, Sapiens, and something I want
+
+12
+00:00:34.213 --> 00:00:37.920
+to do. Check it, edit it, and confirm.
+
+13
+00:00:37.990 --> 00:00:40.000
+Nothing is saved before you say so.
+
+14
+00:00:41.235 --> 00:00:42.001
+Now a movie.
+
+15
+00:00:42.440 --> 00:00:44.800
+I watched Arrival and loved it.
+
+16
+00:00:44.940 --> 00:00:48.240
+The model recognizes a movie, but leaves the action
+
+17
+00:00:48.304 --> 00:00:52.440
+uncertain. Review lets you choose what happened before saving.
+
+18
+00:00:53.665 --> 00:00:55.360
+The book stays on your wishlist.
+
+19
+00:00:55.500 --> 00:00:58.720
+The movie becomes a watched film you loved, after
+
+20
+00:00:58.782 --> 00:01:02.640
+confirmation. Both are saved in this browser, and survive
+
+21
+00:01:02.780 --> 00:01:06.480
+a reload.  The adapter trained on seven hundred and
+
+22
+00:01:06.514 --> 00:01:09.920
+thirty examples. In a two hundred note test, joint
+
+23
+00:01:09.991 --> 00:01:14.720
+accuracy rose from sixty-seven to seventy-six point five percent,
+
+24
+00:01:14.760 --> 00:01:17.440
+still below the eighty-one percent majority baseline.
+
+25
+00:01:17.653 --> 00:01:19.280
+It remains experimental.
+
+26
+00:01:20.781 --> 00:01:24.366
+Explore the app, research code, and published model.
+
+27
+00:01:24.470 --> 00:01:27.206
+OpenMemory. A I suggests.
+
+28
+00:01:27.406 --> 00:01:29.846
+You decide what becomes a memory.

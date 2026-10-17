@@ -8,7 +8,14 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    date: "September 2025 - Present",
+    date: "August 2026 - Present",
+    position: "Software Engineer 2",
+    company: "Skyscanner",
+    description: [],
+    link: "https://www.skyscanner.net/",
+  },
+  {
+    date: "September 2025 - July 2026",
     position: "Senior Software Engineer (Frontend / Full-Stack)",
     company: "Agoda",
     description: [

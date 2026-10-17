@@ -1,34 +1,15 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-});
-
 export const metadata: Metadata = {
-  title: "Mahamudul Hasan | Senior Software Engineer",
+  title: "Mahamudul Hasan Mithhu — Software Engineer",
   description:
-    "Portfolio of Mahamudul Hasan Mithhu — Senior Software Engineer with 6+ years of experience in React, TypeScript, frontend architecture, and full-stack development.",
-  keywords: [
-    "Software Engineer",
-    "Frontend Developer",
-    "React",
-    "TypeScript",
-    "Next.js",
-    "Portfolio",
-  ],
-  authors: [{ name: "Mahamudul Hasan" }],
+    "Software Engineer 2 at Skyscanner. Building considered web experiences, full-stack systems, and OpenMemory: a local-first memory app with published ML research.",
+  authors: [{ name: "Mahamudul Hasan Mithhu" }],
   openGraph: {
-    title: "Mahamudul Hasan | Senior Software Engineer",
+    title: "Mahamudul Hasan Mithhu — Software Engineer",
     description:
-      "Senior Software Engineer specializing in React, TypeScript, and modern web technologies.",
+      "Selected work, engineering notes, and a career building products. Currently at Skyscanner.",
     type: "website",
   },
 };
@@ -39,12 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
