@@ -93,10 +93,10 @@ a {
   padding-bottom: 112px;
 }
 .eyebrow {
-  font-family: "Courier New", monospace;
-  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
   line-height: 1.6;
 }
@@ -141,6 +141,7 @@ a {
   display: flex;
   align-items: center;
   gap: 9px;
+  font-size: 13px;
 }
 .status-dot {
   display: inline-block;
@@ -197,11 +198,12 @@ a {
   justify-content: space-between;
   margin-top: 65px;
   padding-top: 18px;
-  color: var(--muted);
-  font-family: "Courier New", monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  color: #454d42;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.025em;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .section-heading {
   margin-bottom: 50px;
@@ -254,9 +256,10 @@ a {
 .image-label {
   display: block;
   padding: 13px 0;
-  font-size: 10px;
+  font-size: 12px;
   color: #454d42;
-  font-family: "Courier New", monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 .case-grid {
   display: grid;
@@ -282,12 +285,13 @@ a {
   margin-top: 20px;
 }
 .tags span {
-  font-family: "Courier New", monospace;
-  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
   padding: 4px 7px;
   border: 1px solid #c3c9ba;
-  color: #4c5547;
+  color: #3e473a;
   line-height: 1.4;
+  font-weight: 600;
 }
 .results {
   border-collapse: collapse;
@@ -297,9 +301,10 @@ a {
 }
 .results caption {
   text-align: left;
-  font-size: 10px;
-  color: var(--muted);
+  font-size: 12px;
+  color: #454d42;
   padding-bottom: 8px;
+  font-weight: 500;
 }
 .results th,
 .results td {
@@ -313,15 +318,15 @@ a {
   text-align: right;
 }
 .results thead {
-  font-size: 10px;
-  color: var(--muted);
+  font-size: 12px;
+  color: #454d42;
 }
 .results .adapter-row {
   background: #dce3d1;
 }
 .case-grid .small-note,
 .small-note {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.7;
 }
 .project-links {
@@ -329,7 +334,7 @@ a {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
-  font-size: 12px;
+  font-size: 13px;
   padding: 28px 0;
 }
 .button {
@@ -415,7 +420,7 @@ details[open] > summary > span {
   margin-bottom: 12px;
 }
 .card-topline .eyebrow {
-  font-size: 9px;
+  font-size: 12px;
 }
 .project-card h3 {
   font-size: 25px;
@@ -437,21 +442,22 @@ details[open] > summary > span {
   gap: 30px;
 }
 .career-date {
-  font-family: "Courier New", monospace;
-  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  color: var(--muted);
+  color: #3e473a;
+  font-weight: 600;
 }
 .current-label {
   background: var(--olive);
   color: #48513d;
   padding: 3px 8px;
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.035em;
 }
 .career-row h3 {
   font-size: 27px;
@@ -497,7 +503,7 @@ details[open] > summary > span {
   margin-bottom: 17px;
 }
 .about-section .eyebrow {
-  color: #b8bfb3;
+  color: #d9dfd3;
 }
 .education {
   border-top: 1px solid #4f5749;
@@ -509,14 +515,14 @@ details[open] > summary > span {
   font-size: 17px;
 }
 .education p {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 7px;
 }
 .social-links {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 25px;
 }
 .toolkit {
@@ -601,8 +607,8 @@ details[open] > summary > span {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  font-size: 10px;
-  color: #555c50;
+  font-size: 12px;
+  color: #454d42;
 }
 .footer-bottom > div {
   display: flex;
@@ -664,6 +670,7 @@ details[open] > summary > span {
   }
   .site-header nav {
     gap: 22px;
+    font-size: 13px;
   }
   .hero h1 {
     font-size: clamp(4rem, 8.6vw, 6rem);
@@ -695,6 +702,7 @@ details[open] > summary > span {
   }
   .project-links {
     gap: 18px;
+    font-size: 13px;
   }
   .section-pad {
     padding-top: 85px;
@@ -714,7 +722,7 @@ details[open] > summary > span {
   }
   .site-header nav {
     gap: 17px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .nav-contact {
     display: none;
@@ -724,7 +732,7 @@ details[open] > summary > span {
     padding-bottom: 22px;
   }
   .hero .eyebrow {
-    font-size: 9px;
+    font-size: 13px;
   }
   .hero h1 {
     font-size: clamp(3.15rem, 12.2vw, 4.7rem);
@@ -751,8 +759,12 @@ details[open] > summary > span {
   }
   .hero-index {
     margin-top: 37px;
-    font-size: 8px;
+    font-size: 13px;
     gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    color: #454d42;
   }
   .section-pad {
     padding-top: 65px;
@@ -782,8 +794,10 @@ details[open] > summary > span {
     padding: 12px 12px 0;
   }
   .image-label {
-    font-size: 8px;
+    font-size: 12px;
     padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
   }
   .case-grid {
     grid-template-columns: 1fr;
@@ -798,7 +812,7 @@ details[open] > summary > span {
   }
   .project-links {
     gap: 18px 23px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .project-links .button {
     width: 100%;
@@ -831,7 +845,10 @@ details[open] > summary > span {
   .career-date {
     flex-direction: row;
     align-items: center;
-    font-size: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #3e473a;
   }
   .career-row h3 {
     font-size: 26px;
@@ -854,14 +871,14 @@ details[open] > summary > span {
     font-size: 24px;
   }
   .certificate-list a {
-    font-size: 10px;
+    font-size: 12px;
     gap: 10px;
   }
   .contact-section {
     padding-top: 60px;
   }
   .contact-section .eyebrow {
-    font-size: 9px;
+    font-size: 13px;
   }
   .contact-section h2 {
     font-size: 52px;
@@ -875,8 +892,9 @@ details[open] > summary > span {
   .footer-bottom {
     margin-top: 60px;
     flex-direction: column;
-    font-size: 9px;
+    font-size: 12px;
     gap: 15px;
+    color: #454d42;
   }
   .resume-page h1 {
     font-size: 38px;
